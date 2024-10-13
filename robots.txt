@@ -1,0 +1,15 @@
+# Allow all user agents to crawl everything except disallowed areas
+User-agent: *
+Disallow: /cdn-cgi/
+Disallow: /wp-admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /index.html
+
+# Block search engines from indexing any URL parameters
+Disallow: /*?*
+
+# Allow specific paths (optional, if you want to ensure they are indexed)
+Allow: /public/
+Allow: /blog/
+
